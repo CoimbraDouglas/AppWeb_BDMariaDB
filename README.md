@@ -28,13 +28,14 @@ CREATE DATABASE universidade;
 E configure o arquivo application.properties:
 
 properties
-Copiar código
+```
 spring.datasource.url=jdbc:mariadb://localhost:3306/universidade
 spring.datasource.username=root
 spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
+```
 
 # Porta da aplicação (caso precise trocar)
 server.port=8081
@@ -43,29 +44,32 @@ Certifique-se de que o MariaDB está rodando (via XAMPP ou serviço).
 
 Clone este repositório:
 
-bash
-Copiar código
+```bash
+
 git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+```
 Abra o projeto no Visual Studio Code / IntelliJ.
 
 Execute a aplicação Spring Boot (@SpringBootApplication).
 
 A API ficará disponível em:
 
-arduino
-Copiar código
+```arduino
+
 http://localhost:8081
+```
 📌 Endpoints Disponíveis
 📘 Cursos
 POST /cursos → Cadastrar curso
 JSON Exemplo:
 
-json
-Copiar código
+```json
+
 {
   "nome": "Engenharia de Software",
   "cargaHoraria": 3600
 }
+```
 GET /cursos → Listar todos os cursos
 
 GET /cursos/{id} → Buscar curso por ID
@@ -73,20 +77,20 @@ GET /cursos/{id} → Buscar curso por ID
 PUT /cursos/{id} → Atualizar curso
 JSON Exemplo:
 
-json
-Copiar código
+```json
+
 {
   "nome": "Ciência da Computação",
   "cargaHoraria": 4000
 }
+```
 DELETE /cursos/{id} → Excluir curso
 
 📗 Alunos
 POST /alunos → Cadastrar aluno vinculado a um curso
 JSON Exemplo:
 
-json
-Copiar código
+```json
 {
   "nome": "Douglas Coimbra",
   "email": "douglas@email.com",
@@ -95,6 +99,7 @@ Copiar código
     "id": 1
   }
 }
+```
 GET /alunos → Listar todos os alunos
 
 GET /alunos/{id} → Buscar aluno por ID
@@ -102,8 +107,8 @@ GET /alunos/{id} → Buscar aluno por ID
 PUT /alunos/{id} → Atualizar aluno
 JSON Exemplo:
 
-json
-Copiar código
+```json
+
 {
   "nome": "Maria Souza",
   "email": "maria@email.com",
@@ -112,6 +117,7 @@ Copiar código
     "id": 2
   }
 }
+```
 DELETE /alunos/{id} → Excluir aluno
 
 🧪 Testes no Postman
@@ -121,14 +127,15 @@ Abra o Postman e faça requisições para os endpoints listados acima.
 
 Exemplo de requisição POST para cadastrar curso:
 
-bash
-Copiar código
+```
+
 POST http://localhost:8081/cursos
 Body → raw → JSON
 {
   "nome": "Sistemas de Informação",
   "cargaHoraria": 3200
 }
+```
 ![Descrição da Imagem](src/main/resources/images/capturaTela.png)
 
 
