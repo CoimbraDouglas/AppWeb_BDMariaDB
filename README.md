@@ -141,8 +141,7 @@ Body → raw → JSON
 ---
 
 📂 Estrutura do Projeto
-bash
-Copiar código
+```bash
 src/
  ├── main/
  │   ├── java/com/seuprojeto/
@@ -154,6 +153,7 @@ src/
  │   └── resources/
  │       └── application.properties
  └── test/
+```
 
  ---
  
