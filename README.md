@@ -46,7 +46,7 @@ Clone este repositório:
 
 ```bash
 
-git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+git clone https://github.com/CoimbraDouglas/AppWeb_BDMariaDB.git
 ```
 Abra o projeto no Visual Studio Code / IntelliJ.
 
@@ -138,6 +138,7 @@ Body → raw → JSON
 ```
 ![Descrição da Imagem](src/main/resources/images/capturaTela.png)
 
+---
 
 📂 Estrutura do Projeto
 bash
@@ -153,5 +154,8 @@ src/
  │   └── resources/
  │       └── application.properties
  └── test/
+
+ ---
+ 
 👨‍💻 Autor
 Projeto desenvolvido por Douglas Coimbra 🚀
