@@ -1,7 +1,7 @@
 # 📚 API REST - Gerenciamento de Alunos e Cursos
 
 ## 📝 Descrição
-Este projeto é uma API RESTful desenvolvida com **Spring Boot** e **MariaDB**, que implementa um sistema de gerenciamento de alunos e cursos.  
+Este projeto é uma API RESTful desenvolvida com `Spring Boot` e **MariaDB**, que implementa um sistema de gerenciamento de alunos e cursos.  
 A aplicação demonstra a utilização de relacionamentos **@ManyToOne** entre entidades (Aluno vinculado a um Curso) e operações CRUD completas.
 
 ---
